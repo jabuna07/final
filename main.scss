@@ -1,0 +1,402 @@
+// ==========================================================================
+// Global Settings
+// ==========================================================================
+@import 'helpers/config';
+@import 'helpers/colors';
+// Mixins
+@import 'helpers/mixins/breakpoints';
+@import 'helpers/mixins/clearfix';
+@import 'helpers/mixins/input-placeholder';
+@import 'helpers/mixins/position';
+@import 'helpers/mixins/position-center';
+@import 'helpers/mixins/reset-list';
+@import 'helpers/mixins/hardware-acceleration';
+@import 'helpers/mixins/truncate';
+@import 'helpers/mixins/background-transition';
+@import 'helpers/mixins/slanted-edge';
+
+// ==========================================================================
+// Base Styles
+// ==========================================================================
+@import 'base/reset';
+@import 'base/base';
+@import 'base/typography';
+
+// ==========================================================================
+// Components
+// Styles for generic UI components
+// Examples include navbar, dialog boxes, carousels, sidebar etc
+// ==========================================================================
+@import 'components/button';
+@import 'components/checkbox';
+
+
+
+
+
+//Nav bar//
+.nav{
+  background-color: #3F51B5;
+  height:64px;
+  margin-bottom:16px;
+  width:1920px;
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper{
+  width:25%;
+}
+
+.left{
+  width:179px;
+  position: relative;
+}
+.text{
+  position: absolute;
+  width:89px;
+  color:#FFFFFF;
+  font-size:20px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height:24px;
+  margin:20px 0px 0px 68px;
+  top:0;
+  // z-index: 1;
+}
+
+//Nav button//
+
+.btn{
+  position: absolute;
+  background-color:#26A69A;
+  border-color:#3F51B5;
+  color:white;
+  margin-left:9px;
+  font-size:10px;
+  padding:4px 6.5px 3px 6.5px;
+  font-family: roboto;
+  line-height: 11.72px;
+  border-radius: 7px;
+  font-weight:500;
+}
+
+.right{
+  margin-top:20px;
+  margin-left:387px;
+}
+
+
+
+
+
+//Body//
+.body{
+  position:absolute;
+  height:1040px;
+  width:1862px;
+  margin-left: 24px;
+  margin-right: 34px;
+}
+
+
+//Banner// 
+.banner{
+  position: relative;
+  width:1862px;
+  height:298px;
+  }
+
+.banner .img1{
+  position: absolute;
+  width:1862px;
+  z-index: 1;
+  }
+  
+.banner .img2{
+  position: absolute;
+  top:0;
+  width:1862px;
+  // left:0;
+   }
+
+
+//logo//
+
+.logo{
+  margin-left: 294px;
+  height:100px;
+  width:261px;
+  
+  margin-top:-49px;
+  position:absolute;
+  z-index: 2;
+}
+
+//text//
+
+.text1{
+  position: absolute;
+  margin-top:-51px;
+  width:145px;
+  margin-left:100px;
+  height:49px;  
+
+}
+
+
+.product{
+  position:absolute;
+  font-family: Roboto;
+  width:54px;
+  font-size: 10px;
+  margin-left: 16px;
+  font-weight: 500;
+  color:#9EA0A5;
+}
+
+.dproduct{
+  position:absolute;
+  font-family: Roboto;
+  height:24px;
+  width:145px;
+  margin-top: 10px;
+  font-weight: 500;
+  line-height: 23.44px;
+  color:#3A3B3F;
+  font-size: 20px;
+
+}
+
+
+
+
+
+// // //search bar//
+
+.search{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  height:36px;
+  margin:76px 0px 24px 284px;
+}
+
+
+.wrap{
+  width:25%;
+  height:36px;
+}
+
+
+.wrap .left{
+    position: relative;
+    background-color: #DFE3E8;
+    width:512px;
+   
+}
+
+.stext{
+  width:378px;
+  position: absolute;
+  height:16px;
+  margin:10px 93px 10px 0px;
+  font-family: roboto;
+  font-weight: 400;
+  line-height: 16.41px;
+  font-size: 14px;
+}
+
+.wrap .right1{
+  position: relative;
+  height:36px;
+  width:132px;
+  margin-left:265px;
+}
+
+.btn1{
+  background-color: #26A69A;
+  height:36px;
+  font-size:14px;
+  font-family: roboto;
+  line-height: 16px;
+  color:white;
+  font-weight:500;
+  border-radius: 5px;
+  border-color:#E5E5E5;
+  text-align: center;
+  padding:10px 14.5px 10px 15.5px;
+}
+
+
+
+.container{
+  height:478px;
+  flex-wrap:wrap;
+  margin-left: 280px;
+  display: flex;
+  justify-content:space-between;
+
+}
+
+
+.container .card{
+  width:33.33%;
+  width:512px;
+  height:227px;
+  margin-bottom: 24px;
+  
+
+}
+
+.card .content{
+  height:227px;
+  border-radius: 5px;
+  border: 1px solid #DFE3E8;
+  
+}
+
+
+.detail{
+  margin-left:28px;
+  margin-bottom:16px;
+  height:62px;
+  width:456px;
+}
+
+
+.card .name{
+  margin:0px 144.5px 0px 144.5px;
+  width:166px;
+  height:21px;
+  color: #212B36;
+  text-align: center;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.09px;
+}
+
+.describ{
+  text-align: center;
+  font-family: Roboto;
+  width: 456px;
+  margin-top:8px;
+  color:#66788A;
+  font-weight:400;
+  line-height: 16.41px;
+  height:33px;
+}
+
+.foot{
+  display:flex;
+  flex-direction: row;
+  width:464px;
+  flex-wrap: wrap;
+  height:45px;
+  margin-left:20px;
+  justify-content:space-between;
+  border-top:1px solid #E5E5E5;
+}
+
+.ft{
+  width:25%;
+}
+
+.ft .clock{
+  position: relative;
+  width:144px;
+}
+
+.update{
+  position: absolute;
+  font-family: Roboto;
+  font-family: 400;
+  line-height: 14.06px;
+  width:92px;
+  font-size: 12px;
+  height:16px;
+  margin-top:16px;
+
+}
+
+.ft .download{
+  position: relative;
+  width:115px;
+  margin-top:11px; 
+  margin-bottom:11px;
+  height:24px;
+}
+
+.ft .ndownload{
+  position: absolute;
+  font-family: Roboto;
+  width:83px;
+  margin-top: 5px;
+  margin-bottom:5px;
+  height:14px;
+  font-size: 12px;
+  line-height: 14.06px;
+  font-weight:400;
+}
+
+
+
+.footer {
+margin-top:24px;
+margin-left:284px;
+height:61px;
+font-family: Roboto;
+font-weight:400;
+border-top:1px solid #DFE3E8;
+
+}
+
+
+.footer .footer1{
+  margin-top:17px;
+  height:22px;
+  width:110px;
+  margin-bottom: 4px;
+  font-size:14px;
+  color: #616161;
+  
+
+}
+
+.footer .footer2{
+  height: 18px;
+  width:810px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6B6C6F;
+}
+
+
+  //   position: relative;
+  //   margin-right:34px;
+  //   margin-left:24px;
+  //   height:61px;
+  //   font-family: roboto;
+  //   font-weight:400;
+  //   font-style: normal;
+    
+  // }
+  
+  // .footer{
+  //   .footer1{
+  //     margin-bottom: 4px;
+  //     // height:22px;
+  //     // width:110px;
+  //     font-size:14px;
+  //     color: #616161;
+  //     line-height: 22px;
+  
+  //   }
+  // }
+  // .footer2{
+  //   margin-bottom:40px;
+  //   font-size: 12px;
+  //   line-height: 18px;
+  //   color: #6B6C6F;
+  //   // height:18px;
